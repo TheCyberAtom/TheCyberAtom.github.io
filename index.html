@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheCyberAtom</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/c692b3ef1c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- === Header === -->
+
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#"> <img id="logo-img" src="../Portfolio/img/RKM_logo.svg" alt="LOGO" width="45px" class="nav-logo"> </a>
+            </div>
+            <div class="theme">
+                <button onclick="themeFunction()"> <i class="fas fa-moon" id="icon"></i> </button>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#intro-section" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-section" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skill-section" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-section" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- === INTRO SECTION === -->
+
+    <div class="intro-section" id="intro-section">
+        <div class="intro-content">
+            
+            <div class="upper-intro">
+                <div class="salutation">
+                    <h3>Hello!</h3>
+                </div>
+    
+                <div class="name">
+                    <h1>I'm <span class="glitch">Rahul Kumar Mishra</span> </h1>
+                </div>
+    
+                <div class="profession">
+                    <ul>
+                        <li>Front End Developer</li>
+                        <li>Web Designer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/thecyberatom" target="blank"><i class="fab fa-linkedin-in"></i></a>                
+                <a href="https://github.com/thecyberatom" target="blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/thecyberatom" target="blank"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div class="nextpage">
+                <a href="#about-section"><i class="fas fa-chevron-down"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- === ABOUT SECTION === -->
+    
+    <div class="about-section" id="about-section">
+        <div class="about-left">
+            <div class="my-image">
+                <img src="img/Rahul_black.jpg" alt="RAHUL" width="100%">
+            </div>
+        </div>
+
+        <div class="about-right">
+            <h1><span class="glitch">About Me </span></h1>
+            <h2>22 Years / Male / India</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                Necessitatibus laboriosam ullam nam maxime facere voluptas id accusamus eaque quasi excepturi fuga nemo hic illum optio unde, 
+                dicta ea voluptatem nostrum, fugit, maiores voluptate consectetur! 
+                Officiis pariatur expedita ea officia voluptas neque ipsam natus excepturi velit. 
+                Id tempora error sit voluptates?</p>
+            
+            <a href="Resume.pdf" download> <button id="resume"><i class="fas fa-arrow-alt-circle-down"></i> Download CV</button> </a>
+        </div>
+
+    </div>
+
+
+    <!-- === SKILLS SECTION === -->
+
+    <div class="skill-section" id="skill-section">
+        
+        <div class="skill-upper">
+            <h1><span class="glitch">Skills</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="skill-lower">
+            <div class="skills">
+                <div class="first card">
+                    <img src="img/website-design.png" alt="Web design" id="card1">
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, harum!</p>
+                </div>
+                <div class="second card">
+                    <img src="img/Development.png" alt="Web Developer" id="card2">
+                    <h2>Developer</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, harum!</p>
+                </div>
+                <div class="third card">
+                    <img src="img/Problem-solving.png" alt="Problem Solving" id="card3">
+                    <h2>Problem Solving</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, harum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- === CONTACT SECTION === -->
+    <div class="contact-section" id="contact-section">
+
+        <div class="contact-left">
+            <div class="left-container">
+                <h1><span class="glitch">Let's Chat.</span> <br> Tell me about your project. </h1>
+                <p>I'd love to hear from you.</p>
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <div class="mailme">
+                        <p>Mail me at :  </p>
+                        <p><a href="mailto:rm76775@gmail.com">rm76775@gmail.com</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-right">
+            <div class="right-container">
+                <h1>Send me a message <i class="fab fa-rocketchat"></i></h1>
+                <form id="contactForm">
+                    <input type="text" placeholder="Full Name" class="feedback" id="name" required><br>
+                    <input type="email" placeholder="Email" class="feedback" id="email" required><br>
+                    <input type="text" placeholder="Subject" class="feedback" id="subject" required><br>
+                    <textarea class="feedback" cols="30" rows="8" placeholder="Message" id="message" required></textarea><br>
+                    <input type="button" value="Send Message" class="submit">
+                </form>
+                <div class="alert">Your message has been sent</div>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- === FOOTER SECTION === -->
+
+
+    <footer>
+        <div>
+            
+        </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
